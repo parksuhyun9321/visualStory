@@ -1,0 +1,157 @@
+.txt {
+  position: fixed;
+  top: 50%;
+  left: 65px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  opacity: 1;
+}
+
+.txt.last {
+  opacity: 0;
+}
+
+.txt h1 {
+  font-size: 5rem;
+}
+
+#section01 {
+  width: 1200px;
+  margin: auto;
+  padding-top: 170px;
+  height: 100%;
+  display: block;
+}
+
+#section01 ul li {
+  float: left;
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+}
+
+#section01 ul li:nth-child(7) {
+  width: 800px;
+}
+
+#section01 ul li:nth-child(1) {
+  height: 800px;
+}
+
+#section01 ul li:nth-child(8) {
+  height: 800px;
+}
+
+#section01 ul li a {
+  width: 100%;
+  height: 400px;
+  z-index: 1;
+}
+
+#section01 ul li a img {
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+#section02 {
+  width: 100%;
+  position: relative;
+}
+
+#section02 ul li {
+  float: left;
+  width: 25%;
+  height: 257.69px;
+  position: relative;
+  display: block;
+}
+
+#section02 ul li:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  opacity: 0;
+}
+
+#section02 ul li:hover:first-child:before {
+  opacity: 0;
+}
+
+#section02 ul li:hover:before {
+  opacity: 1;
+}
+
+#section02 ul li:hover .btnView {
+  opacity: 1;
+}
+
+#section02 ul li:hover h2 {
+  opacity: 1;
+}
+
+#section02 ul li img {
+  width: 100%;
+  height: 100%;
+}
+
+#section02 ul li .btnView {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2rem;
+  text-align: center;
+  opacity: 0;
+  padding: 15px 30px;
+  border: 1px solid #fff;
+  display: block;
+}
+
+#section02 ul li .btnView:hover {
+  color: #e5004f;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+
+#section02 ul li h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2.4rem;
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  padding: 15px 40px;
+  border: 1px solid #fff;
+}
+
+#section02 ul li h2:first-child {
+  opacity: 1;
+  font-size: 3.6rem;
+  padding: 0;
+  border: none;
+}
+
+#section02 ul li h2:first-child:after {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 2px;
+  background-color: #fff;
+  margin-top: 10px;
+}
