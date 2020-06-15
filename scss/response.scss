@@ -134,19 +134,18 @@
     }
     #section01 {
         width: 100%;
-        height: 90%;
+        height: 100%;
         margin: auto;
         ul {
             li {
-                float: none;
-                width:100% ;
+                width:50% ;
                 height: 400px;
                 img {
                     height: 100%;
                     width: 100%;
                 }
                 &:nth-child(7) {
-                    width: 100%;
+                     width: 50%;
                 }
                 &:nth-child(1) {
                     height: 400px;
@@ -198,8 +197,19 @@
             right: 20px;
         }
     } 
+    #section01 {
+        ul {
+            li {
+                float: none;
+                width: 100%;
+                &:nth-child(7) {
+                    width: 100%;
+               }
+            }
+        }
+    }
     #footer {
-        height: 360px ;
+        height: 100% ;
         width: 100%;
         address {
              p {
