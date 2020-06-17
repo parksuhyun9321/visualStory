@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/response.css">
     <script src="..//js/jquery-3.4.1.min.js"></script>
-    <script src="../js/swiper.min.js"></script>
-    <script src="../js/greensock/gsap.min.js"></script>
     <script defer src="../js/main.js"></script>
 </head>
 
@@ -31,6 +29,7 @@
             <span></span>
         </button>
     </header>
+<!-- header end -->
     <nav id="gnb">
         <h2 class="hidden">global navigation</h2>
         <div class="inner">
@@ -72,6 +71,7 @@
             <span></span>
         </a>
     </nav>
+    <!-- modal menu -->
     <div class="txt">
         <h1>
             share<br>
@@ -80,14 +80,15 @@
             creative
         </h1>
     </div>
+    <!-- mainText -->
     <div class="bg1 bg">
         <img src="../images/bg_01.png" alt="background_Png">
     </div>
     <div class="bg2 bg">
         <img src="../images/bg_02.png" alt="background_Png">
     </div>
-    <!-- header end -->
-    <div id="contents">
+    <!-- background icon -->
+    <main id="contents">
         <section id="section01">
             <h2 class="hidden">portfolio</h2>
             <ul class="clearFix">
@@ -181,7 +182,7 @@
             </ul>
         </section>
         <!-- section02 end -->
-    </div>
+    </main>
     <footer id="footer">
         <h2>
             (주)비쥬얼스토리
@@ -194,6 +195,26 @@
         </address>
         <a href="" class="btnMore">프로젝트 문의</a>
     </footer>
+    <div class="popupWrap">
+        <div id="popup">
+            <h2 class="popupLogo">
+                <img src="../images/suhyunLogo_white.svg" alt="">
+            </h2>
+            <div class="info">
+                <p>
+                    기존의 세로형 레이아웃이 아닌 바둑판 형식의 레이아웃으로 리뉴얼한 사이트 입니다.<br>
+                    본사이트는 상업적 목적이 없는 개인 포트폴리오용 사이트 임을 밝힙니다.
+                </p>
+                <a href="http://www.visualstory.co.kr/main/" target="blank">
+                    <span>기존 사이트</span>
+                    <img src="../images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="footer">
+                <button class="btnClose">닫기</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
