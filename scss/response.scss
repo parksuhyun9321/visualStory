@@ -30,7 +30,7 @@
             width: 100%;
             top: 50%;
             text-align: center;
-            transform: translateY(-50%);
+            transform: translate(-50%,-50%);
             .list {
                 display: inline-block;
                 > li {
@@ -226,4 +226,23 @@
             margin-top: 50px;
         }
     }  
+    .popupWrap {
+        width: 100%;
+        #popup {
+            width: 100% !important;
+            height: auto;
+            padding: 25px;
+            .info {
+                p {
+                    font-size: 1.3rem;
+                }
+                a {
+                    padding: 10px;
+                    span {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
 }
