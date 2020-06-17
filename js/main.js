@@ -9,14 +9,14 @@ $(".popupWrap .footer .btnClose").on("click",function(){
 
 
 $(".utilMenu").on("click",function(){
-    $("#gnb").fadeIn(250);
+    $("#gnb").slideDown(250);
     $(".utilMenu").hide();
     $("#logo").hide();
 
     return false;
 });
 $("#gnb .btnClose").on("click",function(){
-    $("#gnb").fadeOut(250);
+    $("#gnb").slideUp(250);
     $(".utilMenu").show()
     $("#logo").show();
     return false;
@@ -43,3 +43,9 @@ $(window).on("scroll",function(){
 });
 
 //스크롤시 애니메이션
+
+let ratio = window.devicePixelRatio;
+if (ratio >= 2){
+    $(".popupWrap").hide()
+}
+// 모바일 접속시 팝업창이 뜨지않음 (모바일 버전은 기존 사이트와 같음)
