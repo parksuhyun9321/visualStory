@@ -63,8 +63,9 @@ a {
     }
     .inner {
         position: absolute;
-        width: 100%;
         top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
         .list {
             display: inline-block;
             > li {
@@ -140,7 +141,6 @@ a {
     position: relative;
     width: 100%;
     height: 100%;
-    z-index: 4;
     background-color: #000;
     font-size: 1.8rem;
     color: #d9d9d9;
@@ -173,5 +173,84 @@ a {
         transform: translateY(-50%);
         padding: 41px 20px;
         background-color: #e5004f;
+    }
+}
+
+.popupWrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,0.8);
+    #popup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 500px;
+        height: 400px;
+        background-color: #e5004f;
+        border: 5px solid #fff;
+        border-radius: 0 0 10px 0;
+        display: none;
+        .popupLogo {
+            margin: 20px 0 0 20px;
+            img {
+                width: 150px;
+            }
+        }
+        .info {
+            padding: 20px;
+            text-align: center;
+            p {
+                font-size: 2rem;
+                font-weight: 700;
+                text-align: center;
+                word-break: keep-all;
+                line-height: 1.5;
+                margin-bottom: 15px;
+            }
+            a {
+                font-size: 2rem;
+                padding: 20px;
+                border: 1px solid #fff;
+                display: inline-block;
+                transition: 0.2s ease;
+                position: relative;
+                img {
+                    width: 100px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    opacity: 0;
+                    transition: 0.2s ease;
+                }
+                &:hover {
+                    background-color: #e5004f;
+                    border: none;
+                    span {
+                        opacity: 0;
+                    }
+                    img {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .footer {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            button {
+                display: inline-block;
+                padding: 5px 20px;
+                border: 1px solid #fff;
+                background-color: #fff;
+                color: #e5004f;
+                font-weight: 700;
+                cursor: pointer;
+            }
+        }
     }
 }
