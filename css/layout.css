@@ -67,28 +67,26 @@ a {
 
 #gnb {
   position: fixed;
-  width: 22.045%;
+  width: 350px;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 9;
+  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   right: 0;
   display: none;
 }
 
 #gnb.last {
-  height: 65.59%;
+  height: 63.8%;
 }
 
 #gnb .inner {
   position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-#gnb .inner .list {
-  display: inline-block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
 }
 
 #gnb .inner .list > li {
@@ -111,6 +109,7 @@ a {
 
 #gnb .inner .list > li .depth01 {
   font-size: 5rem;
+  -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
 
@@ -118,11 +117,13 @@ a {
   font-size: 2.4rem;
   font-weight: 300;
   opacity: 0;
+  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   font-family: 'Roboto Slab';
   line-height: 1.3;
 }
@@ -149,11 +150,13 @@ a {
 }
 
 #gnb .btnClose span:nth-child(1) {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 #gnb .btnClose span:nth-child(2) {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .bg {
@@ -212,7 +215,8 @@ a {
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   padding: 41px 20px;
   background-color: #e5004f;
 }
@@ -229,7 +233,8 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 500px;
   height: 400px;
   background-color: #e5004f;
@@ -265,6 +270,7 @@ a {
   padding: 20px;
   border: 1px solid #fff;
   display: inline-block;
+  -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
   position: relative;
 }
@@ -274,8 +280,10 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   opacity: 0;
+  -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
 
