@@ -9,14 +9,13 @@ $(".popupWrap .footer .btnClose").on("click",function(){
 
 
 $(".utilMenu").on("click",function(){
-    $("#gnb").slideDown(250);
+    $("#gnb").fadeIn()
     $(".utilMenu").hide();
     $("#logo").hide();
-
     return false;
 });
 $("#gnb .btnClose").on("click",function(){
-    $("#gnb").slideUp(250);
+    $("#gnb").fadeOut();
     $(".utilMenu").show()
     $("#logo").show();
     return false;
