@@ -3,7 +3,8 @@
     position: absolute;
     top: 50px;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .txt br:nth-child(2) {
     display: none;
@@ -21,6 +22,7 @@
     background-color: rgba(0, 0, 0, 0.9);
     display: none;
     z-index: 9;
+    -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
   #gnb.last {
@@ -28,10 +30,10 @@
   }
   #gnb .inner {
     position: absolute;
-    width: 100%;
     top: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   #gnb .inner .list {
     display: inline-block;
@@ -52,17 +54,20 @@
   }
   #gnb .inner .list > li .depth01 {
     font-size: 5rem;
+    -webkit-transition: 0.25s ease-in-out;
     transition: 0.25s ease-in-out;
   }
   #gnb .inner .list > li .depth02 {
     font-size: 2.4rem;
     font-weight: 300;
     opacity: 0;
+    -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
     font-family: 'Roboto Slab';
     line-height: 1.3;
   }
