@@ -51,7 +51,7 @@ a {
 }
 #gnb {
     position: fixed;
-    width: 22.045%;
+    width:350px;
     height: 100%;
     background-color: rgba(0,0,0,0.8);
     z-index: 9;
@@ -59,15 +59,14 @@ a {
     right: 0;
     display: none;
     &.last {
-        height: 65.59%;
+        height: 63.8%;
     }
     .inner {
         position: absolute;
-        top: 15%;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
         .list {
-            display: inline-block;
             > li {
                 text-align: center;
                 margin: 40px 80px;
