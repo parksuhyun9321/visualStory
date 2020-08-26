@@ -44,6 +44,7 @@ $(window).on("scroll",function(){
 //스크롤시 애니메이션
 
 let ratio = window.devicePixelRatio;
+console.log(ratio);
 if (ratio >= 2){
     $(".popupWrap").hide()
 }
