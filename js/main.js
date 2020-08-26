@@ -45,7 +45,8 @@ $(window).on("scroll",function(){
 
 let ratio = window.devicePixelRatio;
 console.log(ratio);
-if (ratio >= 2){
+if (ratio >= 2 && $(window).width()+17 <= 1800){
     $(".popupWrap").hide()
 }
+
 // 모바일 접속시 팝업창이 뜨지않음 (모바일 버전은 기존 사이트와 같음)
