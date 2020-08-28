@@ -1,3 +1,9 @@
+body{
+    &.mobile {
+
+    }
+}
+
 @media all and(max-width:1764px){
     .txt {
         position: absolute;
@@ -21,10 +27,6 @@
         background-color: rgba(0,0,0,0.9);
         display: none;
         z-index: 9;
-        transition: 0.3s ease-in-out;
-        &.last {
-            height: 100%;
-        }
         .inner {
             position: absolute;
             top: 50%;
