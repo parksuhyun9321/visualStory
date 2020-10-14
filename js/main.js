@@ -26,17 +26,17 @@ $("#gnb .btnClose").on("click",function(){
 let util = document.querySelector(".utilMenu");
 let logo = document.querySelector("#logo");
 let txt = document.querySelector(".txt");
-let gnb = document.querySelector("#gnb");
+// let gnb = document.querySelector("#gnb");
 
 $(window).on("scroll",function(){
     let st = this.scrollY;
     // console.log("st", st)
     if(st >= 1200) {
-        gnb.classList.add("last");
+        // gnb.classList.add("last");
         txt.classList.add("last");
     } 
     else {
-        gnb.classList.remove("last");
+        // gnb.classList.remove("last");
         txt.classList.remove("last");
     }
 });
